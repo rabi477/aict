@@ -24,6 +24,12 @@
 		#footer,#footer a{color:white;}
 		#banner>img{height:100%;width:100%;}
 		#ad>img{height:100%;width:100%;}
+		#event img{height:100%;width:80%;}
+		
+		#topmenu{margin:0px;padding-left:2px;text-align:center;}
+		#topmenu>li{list-style:none;display:inline-block;background-color:orange;
+		padding:10px 35px;}
+		#topmenu>li:hover{background-color:#51A92E;}
 		</style>
 	</head>
 	<body>
@@ -34,22 +40,59 @@
 				</div>
 			</div>
 			<div id="banner">
-				<img src="./images/im1.jpg"/>
+				<img src="im1.jpg"/>
 			</div>
 			<div id="menu">
+				<ul id="topmenu">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Services</a></li>
+				
+				</ul>
 			</div>
 			<div id="details">
 				<div id="ad">
-				<img src="./images/im2.gif"/>
+				<img src="im2.gif"/>
 				</div>
 				<div id="content">
 				</div>
 				<div id="misc">
 					<div id="news">
+						<mark>Updated News</mark>
+						<marquee direction="up" height="80%" onmouseover="stop();" onmouseout="start();">
+							<ol>
+							<li>Admission Open</li>
+							<li><a href="https://aictech.co.in/Register" target="_blank">Register</a> Now</li>
+							<li><a href="C:\Users\AICT KOLKATA\Desktop\CRM proposal.pdf">Download Admission Form</a></li>
+							<li>Admission Open</li>
+							<li>Register Now</li>
+							<li>Download Admission Form</li>
+							<li>Admission Open</li>
+							<li>Register Now</li>
+							<li>Download Admission Form</li>
+							<li>Admission Open</li>
+							<li>Register Now</li>
+							<li>Download Admission Form</li>
+							</ol>
+						</marquee>
 					</div>
 					<div id="event">
+						<marquee>
+							<img src="amazon-icon-14.png"/>
+							<img src="search.png"/>
+							<img src="amazon-icon-14.png"/>
+						</marquee>
 					</div>
 					<div id="login">
+						<form>
+							<table border="1" width="80%" align="center">
+							<tr><td>Email</td><td><input type="email" required /></td></tr>
+							<tr><td>Password</td><td><input type="password" required /></td></tr>
+							<tr><td></td><td><input type="submit" value="Login" /></td></tr>
+							</table>
+							<p style="text-align:center;"> <a href="reg.html">new User?</a> | <a href="forget.html">forget password?</a></p>
+						</form>
 					</div>
 				</div>
 			</div>
