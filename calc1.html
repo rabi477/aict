@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script>
+		function fun1(n)
+		{
+			x=document.getElementById("t1").value;//"3"
+			y=document.getElementById("t2").value;//"5"
+			switch(n)
+			{
+			case '+':
+			z=parseInt(x)+parseInt(y);//"3"+"5"
+			break;
+			case '-':
+			z=parseInt(x)-parseInt(y);//"3"-"5"
+			break;
+			case '*':
+			z=parseInt(x)*parseInt(y);//"3"*"5"
+			break;
+			case '/':
+			z=parseInt(x)/parseInt(y);//"3"/"5"
+			break;
+			}
+			
+			document.getElementById("t3").innerHTML=z;
+		}
+		</script>
+	</head>
+	<body>
+	Num1<br>
+	<input id="t1" type="number"/><br>
+	Num2<br>
+	<input id="t2" type="number"/><br>
+	<input type="button" value="+" onclick="fun1(this.value);"/>
+	<input type="button" value="-" onclick="fun1(this.value);"/>
+	<input type="button" value="*" onclick="fun1(this.value);"/>
+	<input type="button" value="/" onclick="fun1(this.value);"/><br>
+	
+	<p id="t3">Result</p>
+	</body>
+</html>
